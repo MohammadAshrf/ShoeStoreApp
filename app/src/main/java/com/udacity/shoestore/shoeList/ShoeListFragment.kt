@@ -25,7 +25,6 @@ class ShoeListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentShoeListBinding.inflate(inflater, container, false)
-        setHasOptionsMenu(true)
         return binding.root
 
     }
