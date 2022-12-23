@@ -10,10 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".onboard.InstructionsFragment"
-        android:background="@drawable/instruc"
-        >
+        android:background="@drawable/instruc">
 
-    <!-- Use LinearLayout ho arrange two texts vertically -->
+        <!-- Use LinearLayout ho arrange two texts vertically -->
         <LinearLayout
             android:id="@+id/welcome_text"
             android:layout_width="match_parent"
@@ -46,19 +45,19 @@
 
         </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/instruction_more"
-        android:layout_marginBottom="30dp"
-        android:textSize="25sp"
-        style="@style/TextAppearance.Material3.BodyMedium"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/next_button"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instruction_more"
+            android:layout_marginBottom="30dp"
+            android:textSize="25sp"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/next_button" />
 
         <Button
             android:id="@+id/next_button"
@@ -74,6 +73,6 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="TextContrastCheck" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </layout>
+</layout>

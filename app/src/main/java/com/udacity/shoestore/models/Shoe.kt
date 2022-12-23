@@ -5,5 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 
-data class Shoe(var name :String? = "", var brand : String? = "", var size:String? = "",
-                var description: String? = "") : Parcelable
+data class Shoe(
+    var name: String? = "", var brand: String? = "", var size: String? = "",
+    var description: String? = ""
+) : Parcelable

@@ -25,7 +25,9 @@ class ShoeListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentShoeListBinding.inflate(inflater, container, false)
+        setHasOptionsMenu(true)
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -42,30 +44,30 @@ class ShoeListFragment : Fragment() {
 
         }
 
-//        val menuHost: MenuHost = requireActivity()            //TODO: New Menu Code
-//
-//        // Add menu items without using the Fragment Menu APIs
-//        // Note how we can tie the MenuProvider to the viewLifecycleOwner
-//        // and an optional Lifecycle.State (here, RESUMED) to indicate when
-//        // the menu should be visible
-//        menuHost.addMenuProvider(object : MenuProvider {
-//            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-//                // Add menu items here
-//                menuInflater.inflate(R.menu.menu, menu)
-//            }
-//
-//            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
-//                // Handle the menu selection
-//                return when (menuItem.itemId) {
-//                    R.id.log_out -> {
-//                        findNavController().navigate(ShoeListFragmentDirections.actionShoeListDestinationToLoginDestination())
-//                        true
-//                    }
-//
-//                    else -> false
-//                }
-//            }
-//        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
+        val menuHost: MenuHost = requireActivity()            //TODO: New Menu Code
+
+        // Add menu items without using the Fragment Menu APIs
+        // Note how we can tie the MenuProvider to the viewLifecycleOwner
+        // and an optional Lifecycle.State (here, RESUMED) to indicate when
+        // the menu should be visible
+        menuHost.addMenuProvider(object : MenuProvider {
+            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+                // Add menu items here
+                menuInflater.inflate(R.menu.menu, menu)
+            }
+
+            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+                // Handle the menu selection
+                return when (menuItem.itemId) {
+                    R.id.log_out -> {
+                        findNavController().navigate(ShoeListFragmentDirections.actionShoeListDestinationToLoginDestination())
+                        true
+                    }
+
+                    else -> false
+                }
+            }
+        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
 
     }
 

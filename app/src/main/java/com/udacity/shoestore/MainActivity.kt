@@ -40,24 +40,6 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(navController.graph)
         NavigationUI.setupWithNavController(toolbar, navController, appBarConfiguration)
 
-        addMenuProvider(object : MenuProvider {
-            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-                // Add menu items here
-                menuInflater.inflate(R.menu.menu, menu)
-            }
-
-            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
-                // Handle the menu selection
-                return when (menuItem.itemId) {
-                    R.id.log_out -> {
-                        navController.navigate(ShoeListFragmentDirections.actionShoeListDestinationToLoginDestination())
-                        true
-                    }
-                    else -> false
-                }
-            }
-        })
-
     }
 
 }

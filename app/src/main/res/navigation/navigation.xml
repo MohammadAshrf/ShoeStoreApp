@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
     app:startDestination="@id/login_destination">
@@ -8,7 +8,7 @@
         android:id="@+id/login_destination"
         android:name="com.udacity.shoestore.login.LoginFragment"
         android:label="Login"
-        tools:layout="@layout/fragment_login" >
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_login_destination_to_welcome_destination"
             app:destination="@id/welcome_destination" />
@@ -17,7 +17,7 @@
         android:id="@+id/welcome_destination"
         android:name="com.udacity.shoestore.onboard.WelcomeFragment"
         android:label="Welcome"
-        tools:layout="@layout/fragment_welcome" >
+        tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_welcome_destination_to_instructionsFragment"
             app:destination="@id/instructions_destination" />
@@ -26,7 +26,7 @@
         android:id="@+id/instructions_destination"
         android:name="com.udacity.shoestore.onboard.InstructionsFragment"
         android:label="Instructions"
-        tools:layout="@layout/fragment_instructions" >
+        tools:layout="@layout/fragment_instructions">
 
         <action
             android:id="@+id/action_instructions_destination_to_shoeList_destination"
@@ -39,7 +39,7 @@
         android:id="@+id/shoeList_destination"
         android:name="com.udacity.shoestore.shoeList.ShoeListFragment"
         android:label="Shoes List"
-        tools:layout="@layout/fragment_shoe_list" >
+        tools:layout="@layout/fragment_shoe_list">
         <action
             android:id="@+id/action_shoeList_destination_to_shoeDetailFragment"
             app:destination="@id/shoeDetail_destination" />
@@ -53,7 +53,7 @@
         android:id="@+id/shoeDetail_destination"
         android:name="com.udacity.shoestore.shoeDetail.ShoeDetailFragment"
         android:label="Details"
-        tools:layout="@layout/fragment_shoe_detail" >
+        tools:layout="@layout/fragment_shoe_detail">
         <action
             android:id="@+id/action_shoeDetail_destination_to_login_destination"
             app:destination="@id/login_destination"
