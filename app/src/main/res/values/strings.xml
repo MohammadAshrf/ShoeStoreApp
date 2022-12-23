@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shoe_app_text">Here\'s Your Shoe Store!</string>
+    <string name="next">Next</string>
+    <string name="instruction_text">Now You Can Open List Of Shoes</string>
+    <string name="instruction_add">Click Add to add a new shoe!</string>
+    <string name="instruction_more">Click Next and find more!</string>
+    <string name="next_btn">Next</string>
+    <string name="add_new_shoe">Add New Shoe</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="shoe_brand">Shoe Brand</string>
+    <string name="shoe_description">Shoe Description</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="saved_failed_message">Please fill all required data!</string>
+    <string name="log_out">Log Out</string>
+</resources>
