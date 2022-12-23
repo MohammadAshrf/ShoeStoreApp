@@ -12,6 +12,7 @@
             type="com.udacity.shoestore.shoeList.ShoeViewModel" />
     </data>
 
+    <!-- Use ConstraintLayout to constraint positioned-relation between attributes and spaces -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
