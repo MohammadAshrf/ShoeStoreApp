@@ -21,15 +21,16 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
-    private lateinit var toolbar: Toolbar
+//    private lateinit var toolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         Timber.plant(Timber.DebugTree())
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        toolbar = binding.toolbar
-        setSupportActionBar(toolbar)
+
+//        toolbar = binding.toolbar
+//        setSupportActionBar(toolbar)
 //        navController = Navigation.findNavController(this, R.id.nav_host_fragment) TODO: Error.
 //        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
 //        val navController = navHostFragment.navController TODO: Worked.
@@ -37,8 +38,8 @@ class MainActivity : AppCompatActivity() {
             binding.navHostFragment.getFragment<NavHostFragment>().navController
         navController.setGraph(R.navigation.navigation, intent.extras)   // TODO: Worked.
 
-        val appBarConfiguration = AppBarConfiguration(navController.graph)
-        NavigationUI.setupWithNavController(toolbar, navController, appBarConfiguration)
+//        val appBarConfiguration = AppBarConfiguration(navController.graph)
+//        NavigationUI.setupWithNavController(toolbar, navController, appBarConfiguration)
 
     }
 
